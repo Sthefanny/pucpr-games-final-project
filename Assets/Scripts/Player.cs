@@ -1,20 +1,28 @@
-using System.Collections;
-using System.Collections.Generic;
 using UnityEngine;
 
 public class Player : MonoBehaviour
 {
-    //public float speed = 0.1f;
+    Rigidbody player;
+    public Animator animator;
 
     // Start is called before the first frame update
     void Start()
     {
-        
+        player = this.GetComponent<Rigidbody>();
     }
 
     // Update is called once per frame
     void Update()
     {
-        //transform.Translate(speed * Time.deltaTime, 0f, 0f);
+
+    }
+
+    private void OnTriggerEnter2D(Collider2D collision)
+    {
+        if (collision.gameObject.tag == "Enemy")
+        {
+            Destroy(collision.gameObject);
+            animator.SetTrigger("TakeDamage");
+        }
     }
 }

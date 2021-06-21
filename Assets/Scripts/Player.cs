@@ -19,7 +19,7 @@ public class Player : MonoBehaviour
 
     private void OnTriggerEnter2D(Collider2D collision)
     {
-        if (collision.gameObject.tag == "Enemy")
+        if (collision.gameObject.tag == "TreeOnFire")
         {
             Destroy(collision.gameObject);
             animator.SetTrigger("TakeDamage");

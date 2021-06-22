@@ -1,15 +1,13 @@
 using UnityEngine;
-using UnityEngine.EventSystems;
 
-public class BotoPower : MonoBehaviour, IPointerClickHandler
+public class BotoPower : MonoBehaviour
 {
     public GameObject prefabToInstantiate;
-    Transform powerPoint;
+    public GameObject player;
 
     // Start is called before the first frame update
     void Start()
     {
-        powerPoint = transform.GetChild(0);
     }
 
     // Update is called once per frame
@@ -17,16 +15,11 @@ public class BotoPower : MonoBehaviour, IPointerClickHandler
     {
     }
 
-    public void OnPointerClick(PointerEventData eventData)
+    public void OnPointerClick()
     {
-        Instantiate(prefabToInstantiate, powerPoint.position, powerPoint.rotation);
-    }
-
-    void OnTriggerEnter2D(Collider2D collision)
-    {
-        if (collision.gameObject.tag == "TreeOnFire")
+        if (player.transform.childCount <= 0)
         {
-            Destroy(collision.gameObject);
+            Instantiate(prefabToInstantiate, player.transform, true);
         }
     }
 }

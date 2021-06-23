@@ -9,6 +9,8 @@ TagManager:
   - TreeOnFire
   - Rocks
   - Hunter
+  - SaciPower
+  - CurupiraPower
   layers:
   - Default
   - TransparentFX

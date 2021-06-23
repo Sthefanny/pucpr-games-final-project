@@ -5,7 +5,7 @@ public class Powers : MonoBehaviour
     // Use this for initialization
     void Start()
     {
-        Destroy(this.gameObject, 1);
+        Destroy(this.gameObject, 0.5f);
     }
 
     // Update is called once per frame
@@ -16,7 +16,15 @@ public class Powers : MonoBehaviour
 
     void OnTriggerEnter2D(Collider2D collision)
     {
-        if (collision.gameObject.tag == "TreeOnFire")
+        if (gameObject.tag == "BotoPower" && collision.gameObject.tag == "TreeOnFire")
+        {
+            Destroy(collision.gameObject);
+        }
+        else if (gameObject.tag == "SaciPower" && collision.gameObject.tag == "Rocks")
+        {
+            Destroy(collision.gameObject);
+        }
+        else if (gameObject.tag == "CurupiraPower" && collision.gameObject.tag == "Hunter")
         {
             Destroy(collision.gameObject);
         }

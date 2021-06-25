@@ -36,5 +36,7 @@ public class Player : MonoBehaviour
         currentHealth -= damage;
 
         healthBar.SetHealth(currentHealth);
+
+        FindObjectOfType<AudioManager>().Play("IaraHurt");
     }
 }

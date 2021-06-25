@@ -4,6 +4,7 @@ public class PowerActivate : MonoBehaviour
 {
     public GameObject powerToInstantiate;
     public GameObject powerPoint;
+    public string audioName;
 
     // Start is called before the first frame update
     void Start()
@@ -20,6 +21,9 @@ public class PowerActivate : MonoBehaviour
         if (powerPoint.transform.childCount <= 0)
         {
             Instantiate(powerToInstantiate, powerPoint.transform, true);
+
+
+            FindObjectOfType<AudioManager>().Play(audioName);
         }
     }
 }

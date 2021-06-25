@@ -309,7 +309,7 @@ Transform:
   m_LocalScale: {x: 20, y: 10, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 3
+  m_RootOrder: 4
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &348588667
 GameObject:
@@ -635,7 +635,7 @@ Transform:
   - {fileID: 1464009426}
   - {fileID: 394210371}
   m_Father: {fileID: 0}
-  m_RootOrder: 2
+  m_RootOrder: 3
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!114 &547218399
 MonoBehaviour:
@@ -1044,7 +1044,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 7
+  m_RootOrder: 8
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!114 &669539553
 MonoBehaviour:
@@ -1307,7 +1307,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 6
+  m_RootOrder: 7
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &783227240
 GameObject:
@@ -1351,7 +1351,7 @@ Transform:
   m_Children:
   - {fileID: 1271966550}
   m_Father: {fileID: 0}
-  m_RootOrder: 1
+  m_RootOrder: 2
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &845034184
 GameObject:
@@ -1500,6 +1500,99 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   powerToInstantiate: {fileID: 3432441445425946678, guid: 3c331e26bb8ee4089bf8f2ae384c3bb9, type: 3}
   powerPoint: {fileID: 1464009425}
+  audioName: SaciPower
+--- !u!1 &880613631
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 880613633}
+  - component: {fileID: 880613632}
+  m_Layer: 0
+  m_Name: AudioManager
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!114 &880613632
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 880613631}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 399874fc2ecdf4c3790b7de83a6ca85c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  sounds:
+  - name: Theme
+    clip: {fileID: 8300000, guid: 53ff1083f81fe414795b746800fac54b, type: 3}
+    volume: 0.1
+    pitch: 1
+    loop: 1
+    source: {fileID: 0}
+  - name: IaraHurt
+    clip: {fileID: 8300000, guid: b939f45c79b594392a7a94685b7882dc, type: 3}
+    volume: 0.2
+    pitch: 1
+    loop: 0
+    source: {fileID: 0}
+  - name: BotoPower
+    clip: {fileID: 8300000, guid: 5bb176244439c487d98e5364db12a61f, type: 3}
+    volume: 0.2
+    pitch: 1
+    loop: 0
+    source: {fileID: 0}
+  - name: CurupiraPower
+    clip: {fileID: 8300000, guid: 87f3cd43ae8124278bf4dbf5c3f4c2d3, type: 3}
+    volume: 0.2
+    pitch: 1
+    loop: 0
+    source: {fileID: 0}
+  - name: SaciPower
+    clip: {fileID: 8300000, guid: 5ea7f0a50c8114350b1df527c7e876db, type: 3}
+    volume: 0.2
+    pitch: 1
+    loop: 0
+    source: {fileID: 0}
+  - name: EnemyHurt
+    clip: {fileID: 8300000, guid: cfe08cca613f14879a27e469ec5f33e1, type: 3}
+    volume: 0.2
+    pitch: 1
+    loop: 0
+    source: {fileID: 0}
+  - name: IntroTheme
+    clip: {fileID: 8300000, guid: 8e377387b25c74c579c7b0eb56fba194, type: 3}
+    volume: 0.1
+    pitch: 1
+    loop: 1
+    source: {fileID: 0}
+  - name: EndingTheme
+    clip: {fileID: 8300000, guid: d6547fc880a7e4acfbf732490004fc76, type: 3}
+    volume: 0.1
+    pitch: 1
+    loop: 1
+    source: {fileID: 0}
+--- !u!4 &880613633
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 880613631}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0.3414079, y: -0.3500524, z: -7.3974004}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_RootOrder: 1
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &930856381
 GameObject:
   m_ObjectHideFlags: 0
@@ -1704,6 +1797,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   powerToInstantiate: {fileID: 6363598774609428522, guid: 72de53d0624404cd89bd8ced179729d7, type: 3}
   powerPoint: {fileID: 730465395}
+  audioName: BotoPower
 --- !u!114 &1072979919
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1857,7 +1951,7 @@ RectTransform:
   - {fileID: 1690387021}
   - {fileID: 435726183}
   m_Father: {fileID: 0}
-  m_RootOrder: 5
+  m_RootOrder: 6
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 0, y: 0}
@@ -2093,7 +2187,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 4
+  m_RootOrder: 5
   m_LocalEulerAnglesHint: {x: 50, y: -30, z: 0}
 --- !u!1 &1301507397
 GameObject:
@@ -2616,6 +2710,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   powerToInstantiate: {fileID: 1434367191082705229, guid: 15e8d40eb77c847c1839d4ce66f0b778, type: 3}
   powerPoint: {fileID: 394210370}
+  audioName: CurupiraPower
 --- !u!1 &2117026499
 GameObject:
   m_ObjectHideFlags: 0

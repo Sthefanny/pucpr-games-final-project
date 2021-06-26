@@ -890,8 +890,8 @@ MonoBehaviour:
       m_Calls:
       - m_Target: {fileID: 868357986}
         m_TargetAssemblyTypeName: TutorialManager, Assembly-CSharp
-        m_MethodName: ChangeTo
-        m_Mode: 5
+        m_MethodName: ChangeToNext
+        m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
           m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
@@ -1098,8 +1098,8 @@ MonoBehaviour:
       m_Calls:
       - m_Target: {fileID: 868357986}
         m_TargetAssemblyTypeName: TutorialManager, Assembly-CSharp
-        m_MethodName: ChangeTo
-        m_Mode: 5
+        m_MethodName: ChangeToNext
+        m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
           m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
@@ -1310,8 +1310,8 @@ MonoBehaviour:
       m_Calls:
       - m_Target: {fileID: 868357986}
         m_TargetAssemblyTypeName: TutorialManager, Assembly-CSharp
-        m_MethodName: ChangeTo
-        m_Mode: 5
+        m_MethodName: ChangeToNext
+        m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
           m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
@@ -1447,6 +1447,7 @@ GameObject:
   - component: {fileID: 406549881}
   - component: {fileID: 406549880}
   - component: {fileID: 406549885}
+  - component: {fileID: 406549886}
   m_Layer: 5
   m_Name: 09
   m_TagString: Untagged
@@ -1609,6 +1610,62 @@ SpriteRenderer:
   m_WasSpriteAssigned: 0
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
+--- !u!114 &406549886
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 406549879}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 4e29b1a8efbd4b44bb3f3716e73f07ff, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Navigation:
+    m_Mode: 3
+    m_WrapAround: 0
+    m_SelectOnUp: {fileID: 0}
+    m_SelectOnDown: {fileID: 0}
+    m_SelectOnLeft: {fileID: 0}
+    m_SelectOnRight: {fileID: 0}
+  m_Transition: 1
+  m_Colors:
+    m_NormalColor: {r: 1, g: 1, b: 1, a: 1}
+    m_HighlightedColor: {r: 0.9607843, g: 0.9607843, b: 0.9607843, a: 1}
+    m_PressedColor: {r: 0.78431374, g: 0.78431374, b: 0.78431374, a: 1}
+    m_SelectedColor: {r: 0.9607843, g: 0.9607843, b: 0.9607843, a: 1}
+    m_DisabledColor: {r: 0.78431374, g: 0.78431374, b: 0.78431374, a: 0.5019608}
+    m_ColorMultiplier: 1
+    m_FadeDuration: 0.1
+  m_SpriteState:
+    m_HighlightedSprite: {fileID: 0}
+    m_PressedSprite: {fileID: 0}
+    m_SelectedSprite: {fileID: 0}
+    m_DisabledSprite: {fileID: 0}
+  m_AnimationTriggers:
+    m_NormalTrigger: Normal
+    m_HighlightedTrigger: Highlighted
+    m_PressedTrigger: Pressed
+    m_SelectedTrigger: Selected
+    m_DisabledTrigger: Disabled
+  m_Interactable: 1
+  m_TargetGraphic: {fileID: 0}
+  m_OnClick:
+    m_PersistentCalls:
+      m_Calls:
+      - m_Target: {fileID: 868357986}
+        m_TargetAssemblyTypeName: TutorialManager, Assembly-CSharp
+        m_MethodName: ChangeToGame
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!1 &414475641
 GameObject:
   m_ObjectHideFlags: 0
@@ -1897,8 +1954,8 @@ MonoBehaviour:
       m_Calls:
       - m_Target: {fileID: 868357986}
         m_TargetAssemblyTypeName: TutorialManager, Assembly-CSharp
-        m_MethodName: ChangeTo
-        m_Mode: 5
+        m_MethodName: ChangeToNext
+        m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
           m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
@@ -3101,42 +3158,43 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   tutorialList:
-  - name: 01
+  - name: 1
     canvas: {fileID: 1467169285}
     enabled: 1
     source: {fileID: 0}
-  - name: 02
+  - name: 2
     canvas: {fileID: 563697350}
     enabled: 0
     source: {fileID: 0}
-  - name: 03
+  - name: 3
     canvas: {fileID: 2109902736}
     enabled: 0
     source: {fileID: 0}
-  - name: 04
+  - name: 4
     canvas: {fileID: 47418606}
     enabled: 0
     source: {fileID: 0}
-  - name: 05
+  - name: 5
     canvas: {fileID: 802088708}
     enabled: 0
     source: {fileID: 0}
-  - name: 06
+  - name: 6
     canvas: {fileID: 1443806754}
     enabled: 0
     source: {fileID: 0}
-  - name: 07
+  - name: 7
     canvas: {fileID: 1307781749}
     enabled: 0
     source: {fileID: 0}
-  - name: 08
+  - name: 8
     canvas: {fileID: 1259736634}
     enabled: 0
     source: {fileID: 0}
-  - name: 09
+  - name: 9
     canvas: {fileID: 406549883}
     enabled: 0
     source: {fileID: 0}
+  delaySeconds: 2
 --- !u!4 &868357987
 Transform:
   m_ObjectHideFlags: 0
@@ -3236,8 +3294,8 @@ MonoBehaviour:
       m_Calls:
       - m_Target: {fileID: 868357986}
         m_TargetAssemblyTypeName: TutorialManager, Assembly-CSharp
-        m_MethodName: ChangeTo
-        m_Mode: 5
+        m_MethodName: ChangeToNext
+        m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
           m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
@@ -4405,8 +4463,8 @@ MonoBehaviour:
       m_Calls:
       - m_Target: {fileID: 868357986}
         m_TargetAssemblyTypeName: TutorialManager, Assembly-CSharp
-        m_MethodName: ChangeTo
-        m_Mode: 5
+        m_MethodName: ChangeToNext
+        m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
           m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
@@ -5222,6 +5280,49 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1579313047}
   m_CullTransparentMesh: 1
+--- !u!1 &1598219065
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1598219067}
+  - component: {fileID: 1598219066}
+  m_Layer: 0
+  m_Name: SceneManager
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!114 &1598219066
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1598219065}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e63af933fd98842dca9a5e211e2585a4, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+--- !u!4 &1598219067
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1598219065}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 2.0560112, y: -1.5695751, z: -21682.371}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_RootOrder: 13
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1614375891
 GameObject:
   m_ObjectHideFlags: 0
@@ -5541,8 +5642,8 @@ MonoBehaviour:
       m_Calls:
       - m_Target: {fileID: 868357986}
         m_TargetAssemblyTypeName: TutorialManager, Assembly-CSharp
-        m_MethodName: ChangeTo
-        m_Mode: 5
+        m_MethodName: ChangeToNext
+        m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
           m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
@@ -5751,10 +5852,10 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 0}
-        m_TargetAssemblyTypeName: SceneController, Assembly-CSharp
-        m_MethodName: ChangeScene
-        m_Mode: 5
+      - m_Target: {fileID: 868357986}
+        m_TargetAssemblyTypeName: TutorialManager, Assembly-CSharp
+        m_MethodName: ChangeToGame
+        m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
           m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
@@ -6270,8 +6371,8 @@ MonoBehaviour:
       m_Calls:
       - m_Target: {fileID: 868357986}
         m_TargetAssemblyTypeName: TutorialManager, Assembly-CSharp
-        m_MethodName: ChangeTo
-        m_Mode: 5
+        m_MethodName: ChangeToNext
+        m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
           m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine

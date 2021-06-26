@@ -19,7 +19,7 @@ public class TutorialManager : MonoBehaviour
 
     public void ChangeTo(string name)
     {
-        print("name = " + name);
+
         TutorialModel t = Array.Find(tutorialList, canvas => canvas.name == name);
         if (t == null)
         {

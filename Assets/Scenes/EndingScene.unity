@@ -268,11 +268,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: "Com a ajuda das lendas da Floresta voc\xEA impediu a floresta de ser consumida
-    por fogo e pedras e ainda ajudou os animais espantando os ca\xE7adores.\n\nAs
-    florestas e animais precisam muito da nossa ajuda, e apesar de n\xE3o termos
-    os poderes na vida real, todos podemos ajudar a preservar a floresta e, com isso
-    melhorar o mundo!\nContinue os esfor\xE7os!\n"
+  m_Text: 
 --- !u!222 &366675845
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -281,49 +277,6 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 366675842}
   m_CullTransparentMesh: 1
---- !u!1 &507795760
-GameObject:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  serializedVersion: 6
-  m_Component:
-  - component: {fileID: 507795762}
-  - component: {fileID: 507795761}
-  m_Layer: 0
-  m_Name: SceneManager
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
---- !u!114 &507795761
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 507795760}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: e63af933fd98842dca9a5e211e2585a4, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
---- !u!4 &507795762
-Transform:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 507795760}
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 2.0560112, y: -1.5695751, z: -21682.371}
-  m_LocalScale: {x: 1, y: 1, z: 1}
-  m_Children: []
-  m_Father: {fileID: 0}
-  m_RootOrder: 3
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1321018529
 GameObject:
   m_ObjectHideFlags: 0
@@ -640,7 +593,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: "Parab\xE9ns!\n"
+  m_Text: 
 --- !u!222 &1593459515
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -662,6 +615,7 @@ GameObject:
   - component: {fileID: 1942523887}
   - component: {fileID: 1942523886}
   - component: {fileID: 1942523885}
+  - component: {fileID: 1942523890}
   m_Layer: 5
   m_Name: Canvas
   m_TagString: Untagged
@@ -772,6 +726,18 @@ RectTransform:
   m_AnchoredPosition: {x: 0, y: 0}
   m_SizeDelta: {x: 0, y: 0}
   m_Pivot: {x: 0, y: 0}
+--- !u!114 &1942523890
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1942523884}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 79cbb2cfdea164900aa9cb4dc14c714a, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &2029077798
 GameObject:
   m_ObjectHideFlags: 0
@@ -854,7 +820,7 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 507795761}
+      - m_Target: {fileID: 0}
         m_TargetAssemblyTypeName: SceneController, Assembly-CSharp
         m_MethodName: ChangeScene
         m_Mode: 5
@@ -863,7 +829,7 @@ MonoBehaviour:
           m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
           m_IntArgument: 0
           m_FloatArgument: 0
-          m_StringArgument: GameScene
+          m_StringArgument: MenuScene
           m_BoolArgument: 0
         m_CallState: 2
 --- !u!114 &2029077801
@@ -899,7 +865,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: "Voltar \n"
+  m_Text: Back
 --- !u!222 &2029077802
 CanvasRenderer:
   m_ObjectHideFlags: 0

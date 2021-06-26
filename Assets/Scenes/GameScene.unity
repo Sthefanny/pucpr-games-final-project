@@ -1534,49 +1534,41 @@ MonoBehaviour:
   - name: Theme
     clip: {fileID: 8300000, guid: 53ff1083f81fe414795b746800fac54b, type: 3}
     volume: 0.1
-    pitch: 1
     loop: 1
     source: {fileID: 0}
   - name: IaraHurt
     clip: {fileID: 8300000, guid: b939f45c79b594392a7a94685b7882dc, type: 3}
     volume: 0.2
-    pitch: 1
     loop: 0
     source: {fileID: 0}
   - name: BotoPower
     clip: {fileID: 8300000, guid: 5bb176244439c487d98e5364db12a61f, type: 3}
     volume: 0.2
-    pitch: 1
     loop: 0
     source: {fileID: 0}
   - name: CurupiraPower
     clip: {fileID: 8300000, guid: 87f3cd43ae8124278bf4dbf5c3f4c2d3, type: 3}
     volume: 0.2
-    pitch: 1
     loop: 0
     source: {fileID: 0}
   - name: SaciPower
     clip: {fileID: 8300000, guid: 5ea7f0a50c8114350b1df527c7e876db, type: 3}
     volume: 0.2
-    pitch: 1
     loop: 0
     source: {fileID: 0}
   - name: EnemyHurt
     clip: {fileID: 8300000, guid: cfe08cca613f14879a27e469ec5f33e1, type: 3}
     volume: 0.2
-    pitch: 1
     loop: 0
     source: {fileID: 0}
   - name: IntroTheme
     clip: {fileID: 8300000, guid: 8e377387b25c74c579c7b0eb56fba194, type: 3}
     volume: 0.1
-    pitch: 1
     loop: 1
     source: {fileID: 0}
   - name: EndingTheme
     clip: {fileID: 8300000, guid: d6547fc880a7e4acfbf732490004fc76, type: 3}
     volume: 0.1
-    pitch: 1
     loop: 1
     source: {fileID: 0}
 --- !u!4 &880613633
@@ -1668,6 +1660,49 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 930856381}
   m_CullTransparentMesh: 1
+--- !u!1 &947175209
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 947175211}
+  - component: {fileID: 947175210}
+  m_Layer: 0
+  m_Name: SceneManager
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!114 &947175210
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 947175209}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e63af933fd98842dca9a5e211e2585a4, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+--- !u!4 &947175211
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 947175209}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 2.0560112, y: -1.5695751, z: -21682.371}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_RootOrder: 9
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1053199877
 GameObject:
   m_ObjectHideFlags: 0

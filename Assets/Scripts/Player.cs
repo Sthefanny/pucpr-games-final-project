@@ -38,5 +38,12 @@ public class Player : MonoBehaviour
         healthBar.SetHealth(currentHealth);
 
         FindObjectOfType<AudioManager>().Play("IaraHurt");
+
+        if (currentHealth == 0)
+        {
+            EndingHelper.isVictory = false;
+
+            FindObjectOfType<SceneController>().ChangeScene("EndingScene");
+        }
     }
 }

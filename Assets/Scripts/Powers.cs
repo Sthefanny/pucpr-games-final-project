@@ -3,7 +3,8 @@ using UnityEngine.UI;
 
 public class Powers : MonoBehaviour
 {
-    // Use this for initialization
+    public int destroyedObjective = 10;
+
     void Start()
     {
         Destroy(this.gameObject, 0.5f);
@@ -33,6 +34,8 @@ public class Powers : MonoBehaviour
             FindObjectOfType<AudioManager>().Play("EnemyHurt");
             changeTextValue("destroyedHuntersText");
         }
+
+        verifyObjectiveCounts();
     }
 
     void changeTextValue(string textField)
@@ -44,5 +47,28 @@ public class Powers : MonoBehaviour
         count++;
 
         fieldText.text = count.ToString();
+    }
+
+    void verifyObjectiveCounts()
+    {
+        var field = GameObject.Find("destroyedTreesText");
+        var destroyedTrees = field.GetComponent<Text>();
+        var destroyedTreesCount = int.Parse(destroyedTrees.text);
+
+        var field2 = GameObject.Find("destroyedRocksText");
+        var destroyedRocks = field2.GetComponent<Text>();
+        var destroyedRocksCount = int.Parse(destroyedRocks.text);
+
+        var field3 = GameObject.Find("destroyedHuntersText");
+        var destroyedHunters = field3.GetComponent<Text>();
+        var destroyedHuntersCount = int.Parse(destroyedHunters.text);
+
+
+        if (destroyedTreesCount >= destroyedObjective && destroyedRocksCount >= destroyedObjective && destroyedHuntersCount >= destroyedObjective)
+        {
+            EndingHelper.isVictory = true;
+
+            FindObjectOfType<SceneController>().ChangeScene("EndingScene");
+        }
     }
 }

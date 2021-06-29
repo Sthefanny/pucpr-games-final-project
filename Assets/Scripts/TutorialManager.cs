@@ -44,7 +44,6 @@ public class TutorialManager : MonoBehaviour
 
     public void ChangeToGame()
     {
-        print("entrou");
         FindObjectOfType<SceneController>().ChangeScene("GameScene");
     }
 }
